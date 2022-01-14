@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, shrink-to-fit=yes, viewport-fit=cover">
+	<link href="https://main-break-news.com/assets/img/favicon.png" rel="icon" sizes="any">
+	<title>Thank you for registration!</title>
+
+	<style>
+		body {
+			margin: 0;
+			min-height: 100vh;
+			min-width: 100vw;
+			position: relative;
+			background: #fff url(assets/img/thank-you.jpg) top center/cover no-repeat;
+			color: #fff;
+			font-weight: 800;
+			font-family: sans-serif;
+			text-transform: uppercase
+		}
+
+		.errorText {
+			position: absolute;
+			bottom: 10vh;
+			left: 0;
+			right: 0;
+			text-align: center;
+			padding: 0 20px
+		}
+
+		h1 {
+			margin: 0 0 20px;
+			font-size: 36px;
+			letter-spacing: -.005em
+		}
+
+		span {
+			font-size: 26px
+		}
+
+		@media (min-width:880px) and (min-height:500px) {
+			h1 {
+				font-size: 100px
+			}
+
+			span {
+				font-size: 36px
+			}
+		}
+
+		@media (max-width:880px) and (min-height:500px) {
+			h1 {
+				font-size: 74px
+			}
+
+			span {
+				font-size: 26px
+			}
+		}
+
+		@media (max-width:650px) {
+			h1 {
+				font-size: 45px
+			}
+
+			.errorText {
+				top: 50%;
+				bottom: auto;
+				transform: translateY(-50%);
+				padding: 0 10px
+			}
+		}
+
+		@media (max-width:400px) {
+			h1 {
+				font-size: 36px
+			}
+		}
+
+		@media (max-width:300px) {
+			h1 {
+				font-size: 32px
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="errorText" class="errorText">
+		<h1>Thank you for your registration!</h1>
+		<span>our manager will contact you soon</span>
+	</div>
+
+	<script src="assets/js/custom.js"></script>
+	<script>checkEror(); aTempl = false;</script>
+</body>
+
+</html>
