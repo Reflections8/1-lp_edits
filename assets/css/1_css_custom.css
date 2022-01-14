@@ -949,7 +949,7 @@ footer {
 }
 
 .data {
-	background: url(../../assets/img/bg-data.png) 50% 0 no-repeat
+	background: url(../../assets/img/bg-data.png) 50% 0 no-repeat;
 }
 
 .logo {
@@ -1262,6 +1262,12 @@ a:hover {
 	}
 }
 
+@media screen and (max-width: 991px) {
+	.data.graphic-bg {
+		background-size: cover;
+	}
+}
+
 @media screen and (max-width:767px) {
 
 	body,
@@ -1285,6 +1291,16 @@ a:hover {
 	.slots {
 		right: 0;
 		margin-top: 20px
+	}
+
+	.flex-row {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.reference-block {
+		width: 100% !important;
 	}
 }
 
@@ -1320,6 +1336,49 @@ a:hover {
 
 .form__input_fake {
 	color: #555 !important
+}
+
+.flex-row {
+	display: flex;
+	align-items: center;
+}
+
+/* .panel-row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+} */
+
+.panel-row .panel {
+	width: 23%;
+	border: none;
+}
+
+.panel-row .panel-heading {
+	background: linear-gradient(#12d11b, #069c0d);
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+}
+
+.panel-img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.panel-body {
+	background-color: #fff;
+	border-radius: 0 0 10px 10px;
+
+}
+
+.reference-block {
+	margin-bottom: 20px;
+}
+
+.reference-text {
+	color: #000;
+	font-size: 14px;
 }
 
 #error-popup {

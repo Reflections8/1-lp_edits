@@ -25,10 +25,10 @@
 			</div>
 		</div>
 	</header>
-	<div id="conVideo" class="wrapper data">
+	<div id="conVideo" class="wrapper data graphic-bg">
 		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
+			<div class="row flex-row">
+				<div class="col-xs-12 col-sm-5 col-md-6">
 					<div class="video-wrapper">
 						<div class="embed-responsive embed-responsive-16by9"> <video width="620" height="370" controls
 								playsinline poster="assets/img/maxresdefault.webp">
@@ -37,14 +37,8 @@
 							</video> </div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<div class="wrapper">
-		<div class="container">
-			<div class="row">
-				<form id="reg-form" class="clearfix" name="form" method="get" action="pages/members.html">
-					<div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2">
+				<form id="reg-form" class="clearfix col-sm-7 col-md-6" name="form" method="get" action="pages/members.html">
+					<div class="col-xs-12 col-sm-6 col-md-6">
 						<div class="input-group">
 							<div class="input-group-addon name"></div><input type="text"
 								class="form-control first-name form__input_fake" id="first_name"
@@ -53,7 +47,7 @@
 							<div class="warning-icon"></div>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-5 col-md-4">
+					<div class="col-xs-12 col-sm-6 col-md-6">
 						<div class="input-group">
 							<div class="input-group-addon email"></div><input type="email"
 								class="form-control user-email form__input_fake" id="email" placeholder="Aktuelle Email Adresse"
@@ -61,12 +55,69 @@
 							<div class="warning-icon"></div>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2"> <button
+					<div class="col-xs-12 col-sm-12 col-md-12"> <button
 							class="button subscribe green reg-sumbit form__button_fake" id="sumbit">JA! ICH WILL EINEN
 							SOFORTIGEN VIP ZUGANG ZUM QUANTUM SYSTEM!</button> </div>
 				</form>
 			</div>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div class="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					Sunt unde,
+					atque
+					perspiciatis, eaque est. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt unde, atque
+					perspiciatis, eaque est. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt unde, atque
+					perspiciatis, eaque est. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt unde, atque
+					perspiciatis, eaque est.
+				</div>
+			</div>
 			<div class="spacer"></div>
+			<div class="row panel-row row">
+				<div class="reference-block col-xs-6 col-sm-6 col-md-3">
+					<div class="panel-heading">
+						John Johnson
+					</div>
+					<img src="assets/img/references/1.jpg" alt="reference_img_1" class="panel-img">
+					<div class="panel-body reference-text">
+						“Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt unde, atque perspiciatis, eaque est
+						”
+					</div>
+				</div>
+				<div class="reference-block col-xs-6 col-sm-6 col-md-3">
+					<div class="panel-heading">
+						John Johnson
+					</div>
+					<img src="assets/img/references/2.jpg" alt="reference_img_2" class="panel-img">
+					<div class="panel-body reference-text">
+						“Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt unde, atque perspiciatis, eaque est
+						”
+					</div>
+				</div>
+				<div class="reference-block col-xs-6 col-sm-6 col-md-3">
+					<div class="panel-heading">
+						John Johnson
+					</div>
+					<img src="assets/img/references/3.jpg" alt="reference_img_3" class="panel-img">
+					<div class="panel-body reference-text">
+						“Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt unde, atque perspiciatis, eaque est
+						”
+					</div>
+				</div>
+				<div class="reference-block col-xs-6 col-sm-6 col-md-3">
+					<div class="panel-heading">
+						John Johnson
+					</div>
+					<img src="assets/img/references/4.jpg" alt="reference_img_4" class="panel-img">
+					<div class="panel-body reference-text">
+						“Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt unde, atque perspiciatis, eaque est
+						”
+					</div>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center verification"> <img
 						src="assets/img/trusted-1.png" class="trusted" alt="Quantum System Verified"> <img
@@ -108,7 +159,7 @@
 	</script>
 
 	<script>
-		function useAuthForm(e) { var t = document.querySelector(e.formSelector); function r(e, t) { if (!(t.nextElementSibling && "errorNot" === t.nextElementSibling.id)) { var r = document.createElement("span"); r.id = "errorNot", r.textContent = e, t.after(r) } } var a = t.querySelector("[name=first_name]"), n = t.querySelector("[name=email]"); a.addEventListener("change", function () { this.value = this.value.trim() }), a.addEventListener("keyup", function (e) { this.value = this.value.replace(/[^\D]/g, ""), e.target.value.length < 2 ? (e.target.classList.remove("valid"), e.target.classList.add("error"), r(e.target.dataset.errorMessage || "2 characters minimum", e.target)) : (e.target.classList.remove("error"), e.target.classList.add("valid")) }), n.addEventListener("keyup", function (e) { !1 === (t = e.target.value, /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(t).toLowerCase().trim())) ? (e.target.classList.remove("valid"), e.target.classList.add("error"), r(e.target.dataset.errorMessage || "Incorrect E-Mail Address", e.target)) : (e.target.classList.remove("error"), e.target.classList.add("valid")); var t }), t.addEventListener("submit", function (e) { if (2 !== t.querySelectorAll("input.valid").length) { var r = new Event("keyup"); return n.dispatchEvent(r), a.dispatchEvent(r), void e.preventDefault() } }) } document.addEventListener("DOMContentLoaded", function () { useAuthForm({ formSelector: "#reg-form" }) });
+		function useAuthForm(e) { var t = document.querySelector(e.formSelector); function r(e, t) { if (!(t.nextElementSibling && "errorNot" === t.nextElementSibling.id)) { var r = document.createElement("span"); r.id = "errorNot", r.textContent = e, t.after(r) } } var a = t.querySelector("[name=first_name]"), n = t.querySelector("[name=email]"); a.addEventListener("change", function () { this.value = this.value.trim() }), a.addEventListener("keyup", function (e) { this.value = this.value.replace(/[^\D]/g, ""), e.target.value.length < 2 ? (e.target.classList.remove("valid"), e.target.classList.add("error"), r(e.target.dataset.errorMessage || "2 characters minimum", e.target)) : (e.target.classList.remove("error"), e.target.classList.add("valid")) }), n.addEventListener("keyup", function (e) { !1 === (t = e.target.value, /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(t).toLowerCase().trim())) ? (e.target.classList.remove("valid"), e.targetа.classList.add("error"), r(e.target.dataset.errorMessage || "Incorrect E-Mail Address", e.target)) : (e.target.classList.remove("error"), e.target.classList.add("valid")); var t }), t.addEventListener("submit", function (e) { if (2 !== t.querySelectorAll("input.valid").length) { var r = new Event("keyup"); return n.dispatchEvent(r), a.dispatchEvent(r), void e.preventDefault() } }) } document.addEventListener("DOMContentLoaded", function () { useAuthForm({ formSelector: "#reg-form" }) });
 	</script>
 
 </body>
